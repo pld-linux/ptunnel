@@ -1,12 +1,12 @@
 Summary:	A tool for tunneling TCP connections over ICMP echo packets
 Summary(pl):	Narzêdzie s³u¿±ce do tunelowania po³±czeñ TCP poprzez pakiety ICMP echo
 Name:		ptunnel
-Version:	0.54
+Version:	0.55
 Release:	0.1
 License:	BSD
 Group:		Networking/Utilities
 Source0:	http://www.cs.uit.no/~daniels/PingTunnel/PingTunnel-%{version}.tar.gz
-# Source0-md5:	e6c4a365938046b9928530d7040c366b
+# Source0-md5:	9bddf47d45f0d2d811662ce52f4a69b4
 Patch0:		%{name}-Makefile.patch
 URL:		http://www.cs.uit.no/~daniels/PingTunnel/index.html
 BuildRequires:	libpcap-devel
