@@ -1,5 +1,5 @@
---- Makefile.dist	2005-02-10 22:15:15.367051840 +0100
-+++ Makefile	2005-02-10 22:15:57.632626496 +0100
+--- Makefile.orig	2005-04-17 17:06:46.000000000 +0200
++++ Makefile	2005-05-16 22:53:40.000000000 +0200
 @@ -1,7 +1,7 @@
  # Makefile for the pingtunnel utility
  # (c) 2004-2005 Daniel Stødle, daniels@stud.cs.uit.no
@@ -8,15 +8,19 @@
 +CC 		= gcc
  CFLAGS		= -Wall -g
  LDOPTS		= -lpthread -lpcap
- PT_OBJS		= ptunnel.o
-@@ -17,8 +17,8 @@
- 	mv PingTunnel/Makefile.dist PingTunnel/Makefile
+ PT_OBJS		= ptunnel.o md5.o
+@@ -19,10 +19,10 @@
  	
  
--install: ptunnel
--	install -D ./ptunnel $(bindir)/ptunnel
-+install: 
-+	install -D ./ptunnel $(DESTDIR)$(bindir)/ptunnel
+ install: ptunnel
+-	install -d $(bindir)/
+-	install -d $(mandir)/
+-	install ./ptunnel $(bindir)/ptunnel
+-	install ./ptunnel.8 $(mandir)/ptunnel.8
++	install -d $(DESTDIR)$(bindir)/
++	install -d $(DESTDIR)$(mandir)/
++	install ./ptunnel $(DESTDIR)$(bindir)/ptunnel
++	install ./ptunnel.8 $(DESTDIR)$(mandir)/ptunnel.8
  
  ptunnel: $(PT_OBJS)
- 	$(CC) $(LDOPTS) -o $@ $^
+ 	$(CC) -o $@ $^ $(LDOPTS)
