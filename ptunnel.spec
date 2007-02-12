@@ -1,5 +1,5 @@
 Summary:	A tool for tunneling TCP connections over ICMP echo packets
-Summary(pl):	Narzêdzie s³u¿±ce do tunelowania po³±czeñ TCP poprzez pakiety ICMP echo
+Summary(pl.UTF-8):   NarzÄ™dzie sÅ‚uÅ¼Ä…ce do tunelowania poÅ‚Ä…czeÅ„ TCP poprzez pakiety ICMP echo
 Name:		ptunnel
 Version:	0.61
 Release:	0.1
@@ -18,11 +18,11 @@ echo request and reply packets. It is useful for evading firewalls
 that, for whatever reason, prevent outgoing TCP connections, but allow
 in- and outgoing ICMP packets.
 
-%description -l pl
-Ping Tunnel jest narzêdziem s³u¿±cym do niezawodnego tunelowania
-po³±czeñ TCP poprzez pakiety ICMP echo request i ICMP echo reply. Ping
-Tunnel jest u¿yteczny do omijania firewalli, które zabraniaj±
-wychodz±cych po³±czeñ TCP, ale pozwalaj± na wchodz±ce i wychodz±ce
+%description -l pl.UTF-8
+Ping Tunnel jest narzÄ™dziem sÅ‚uÅ¼Ä…cym do niezawodnego tunelowania
+poÅ‚Ä…czeÅ„ TCP poprzez pakiety ICMP echo request i ICMP echo reply. Ping
+Tunnel jest uÅ¼yteczny do omijania firewalli, ktÃ³re zabraniajÄ…
+wychodzÄ…cych poÅ‚Ä…czeÅ„ TCP, ale pozwalajÄ… na wchodzÄ…ce i wychodzÄ…ce
 pakiety ICMP.
 
 %prep
