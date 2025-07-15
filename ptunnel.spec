@@ -27,7 +27,7 @@ pakiety ICMP.
 
 %prep
 %setup -q -n PingTunnel
-%patch0 -p0
+%patch -P0 -p0
 
 %build
 %{__make} \
